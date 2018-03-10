@@ -1,0 +1,94 @@
+/******************************************
+*   Main or page navigation styles                       
+******************************************/
+
+
+/*Main Navbar */
+
+#nav {
+	background:#000;
+	font-size:0.8em;
+	text-transform:uppercase;
+	}
+	
+#nav, #nav ul {
+	list-style:none;
+	line-height:1;
+	}
+
+#nav a, #nav a:hover {
+	display: block;
+	text-decoration: none;
+	border:none;
+	}
+
+#nav li {
+	float: left;
+	list-style:none;
+	border-right:1px solid #fff;
+	}
+#nav li.current_page_item{background:#603;}
+#nav li:hover{background:#43454e;}
+
+#nav a, #nav a:visited {
+	display:block;
+	color: #eee;
+	padding:10px 12px;
+	}
+
+#nav a:hover, #nav a:active {
+	background:#43454e;
+	text-decoration:none;
+	}	
+#nav a:active{background:#fff; color:#603;}
+
+.current_page_item	a, .current_page_parent, #home .on  {background:#603;}
+	
+	
+	
+/* Dropdown Menus for child pages */		
+
+#nav li ul {/*first level dropdown*/
+	position: absolute;
+	z-index: 10;
+	left: -999em;
+	height: auto;
+	width: 174px;
+	border-bottom: 1px solid #666;
+	}
+	
+#nav li ul ul {/*second level dropdown*/
+	margin: -2em 0 0 172px;
+	}
+
+#nav li:hover ul ul, #nav li.sfhover ul ul {
+	left: -999em;
+	}
+
+#nav li li {
+	width: 172px;
+	border-top: 1px solid #fff;
+	border-right: 1px solid #fff;
+	border-left: 1px solid #fff;
+	background:#999;
+	}
+
+#nav li li a, #nav li li a:visited {
+	font-weight:normal;
+	font-size:0.9em;
+	color:#FFF;
+	}
+
+#nav li li a:active {background:#603;}	
+	
+#nav li:hover ul, #nav li li:hover ul, #nav li li li:hover ul, #nav li.sfhover ul, #nav li li.sfhover ul, #nav li li li.sfhover ul {left: auto;}
+
+a.main:hover {background:none;}
+
+
+
+
+
+	
+
+		
